@@ -29,6 +29,7 @@ WORKDIR /recommendationservice
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
+
 # add files into working directory
 COPY . .
 

@@ -51,6 +51,10 @@ spec:
         #   value: "1"
         # - name: DISABLE_DEBUGGER
         #   value: "1"
+        securityContext:
+          capabilities:
+            add:
+              - SYS_PTRACE
         resources:
           requests:
             cpu: 100m

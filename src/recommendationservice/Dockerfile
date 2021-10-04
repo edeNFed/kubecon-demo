@@ -14,8 +14,8 @@
 
 FROM python:3.7-slim
 RUN apt-get update -qqy && \
-	apt-get -qqy install wget g++ && \
-	rm -rf /var/lib/apt/lists/*
+    apt-get -qqy install wget g++ procps && \
+    rm -rf /var/lib/apt/lists/*
 # show python logs as they occur
 ENV PYTHONUNBUFFERED=0
 

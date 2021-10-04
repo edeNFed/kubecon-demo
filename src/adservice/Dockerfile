@@ -15,7 +15,7 @@
 FROM openjdk:8-slim
 WORKDIR /app
 RUN apt-get -y update && apt-get install -qqy \
-    wget \
+    wget procps \
     && rm -rf /var/lib/apt/lists/*
 
 COPY . .
